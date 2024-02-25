@@ -16,5 +16,5 @@ export default HomePage
 
 const StyleHomeContainer = styled(Box)`
   width: 100%;
-  padding-top: 90px;
+  padding: 70px 0;
 `

@@ -14,7 +14,7 @@ export const Container = styled(Box)`
   `};
 
   ${media.desktop`
-    padding: 0 120px;
+    padding: 96px 120px;
   `};
 `
 export const Row = styled(Box)`
