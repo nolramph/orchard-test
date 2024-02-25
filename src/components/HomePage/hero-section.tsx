@@ -9,7 +9,7 @@ import { media } from "../../styled/utils"
 
 const HeroSection = () => {
   return (
-    <HeroContainer id="hero-section">
+    <Container id="hero-section">
       <StyledRow>
         <ImageResponsiveBox order="2">
           <img
@@ -48,24 +48,11 @@ const HeroSection = () => {
           </article>
         </ContentResponsiveBox>
       </StyledRow>
-    </HeroContainer>
+    </Container>
   )
 }
 
 export default HeroSection
-
-const HeroContainer = styled(Box)`
-  position: relative;
-  padding: 0 20px;
-
-  ${media.tablet`
-    padding: 0 60px;
-  `};
-
-  ${media.desktop`
-    padding: 0 120px;
-  `};
-`
 
 const StyledRow = styled(Row)`
   gap: 24px;

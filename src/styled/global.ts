@@ -6,11 +6,16 @@ import { media } from "./utils"
 import Box from "../components/Box"
 
 export const Container = styled(Box)`
-  display: flex;
+  position: relative;
+  padding: 0 20px;
 
   ${media.tablet`
-    flex-direction: column;
-  `}
+    padding: 0 60px;
+  `};
+
+  ${media.desktop`
+    padding: 0 120px;
+  `};
 `
 export const Row = styled(Box)`
   width: 100%;

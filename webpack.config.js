@@ -9,6 +9,7 @@ module.exports = {
     filename: "bundle.js",
     publicPath: "/",
   },
+  devtool: "eval-cheap-module-source-map",
   module: {
     rules: [
       {
@@ -51,5 +52,6 @@ module.exports = {
       directory: path.join(__dirname, "/src"),
     },
     historyApiFallback: true,
+    hot: true,
   },
 }
