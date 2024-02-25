@@ -1,7 +1,18 @@
+import styled from "styled-components"
+
+//components
+import Box from "../Box"
+import HeroSection from "./hero-section"
+
 const HomePage = () => (
-  <div>
-    <h1>Welcome to the Orchard Initial Scaffold!</h1>
-  </div>
+  <StyleHomeContainer>
+    <HeroSection />
+  </StyleHomeContainer>
 )
 
 export default HomePage
+
+const StyleHomeContainer = styled(Box)`
+  width: 100%;
+  padding-top: 90px;
+`

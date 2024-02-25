@@ -86,11 +86,10 @@ Open [http://localhost:8080](http://localhost:8080) with your browser to see the
 
 Version 1
 - [x] Add initial setup and scaffolding (includes fonts and home page)
-- [ ] Add mobile view
-- [ ] Add table view
-- [ ] Add desktop view
+- [x] Add hero section with responsive view
 - [ ] Add button / call to action component
 - [ ] Add card component
+- [ ] Add featured blog lists with responsive view
 - [ ] Add slider component (Optional)
 
 
