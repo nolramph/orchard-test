@@ -29,10 +29,16 @@ export default Card
 
 const CardContainer = styled.div`
   max-width: 340px;
+  overflow: hidden;
 `
 const CardImage = styled.img`
   width: 100%;
   height: auto;
+  transition: transform 0.5s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 `
 const CardContent = styled.div`
   h3 {
