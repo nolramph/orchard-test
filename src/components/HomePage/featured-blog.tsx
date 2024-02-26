@@ -4,6 +4,9 @@ import styled from "styled-components"
 import { Container } from "../../styled/global"
 import Card from "../Card"
 
+//constants
+import { FEATURED_BLOG_ITEMS } from "../../constants"
+
 //styled utils
 import { media } from "../../styled/utils"
 
@@ -11,14 +14,18 @@ const FeaturedBlog = () => {
   return (
     <StyledContainer id="featured-blog">
       <h2>All the latest from AEG</h2>
-      <Card
-        imageUrl="../../assets/images/component2/featured-image1.jpg"
-        imageAlt="Add a sample alt here"
-        title="Summer Lunch Menu By Mark Best"
-        content="AEG ambassador Mark Best’s summer eats are guaranteed to help you make the most of the warmer weather and entertaining at home."
-        linkName="Read more"
-        href="/"
-      />
+      <CardContainer>
+        {FEATURED_BLOG_ITEMS.map(post => (
+          <Card
+            imageUrl={post.imageUrl}
+            imageAlt={post.imageAlt}
+            title={post.title}
+            content={post.content}
+            linkName={post.ctaName}
+            href={post.url}
+          />
+        ))}
+      </CardContainer>
     </StyledContainer>
   )
 }
@@ -34,4 +41,11 @@ const StyledContainer = styled(Container)`
     text-transform: uppercase;
     text-align: center;
   }
+`
+
+const CardContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
 `

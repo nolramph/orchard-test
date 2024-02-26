@@ -7,10 +7,10 @@ import Box from "../components/Box"
 
 export const Container = styled(Box)`
   position: relative;
-  padding: 0 20px;
+  padding: 48px 20px;
 
   ${media.tablet`
-    padding: 0 60px;
+    padding: 48px 60px;
   `};
 
   ${media.desktop`

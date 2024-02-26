@@ -3,7 +3,7 @@ import { css, FlattenSimpleInterpolation } from "styled-components"
 const breakpoints = {
   mobile: "320px",
   tablet: "768px",
-  laptop: "1024px",
+  laptop: "1280px",
   desktop: "1440px",
 } as const
 
