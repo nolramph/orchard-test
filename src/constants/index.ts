@@ -11,6 +11,7 @@ export const NAVIGATION_ITEMS = [
 
 export const FEATURED_BLOG_ITEMS = [
   {
+    id: 1,
     title: "Summer Lunch Menu By Mark Best",
     imageUrl: "../../assets/images/component2/featured-image1.jpg",
     content:
@@ -20,6 +21,7 @@ export const FEATURED_BLOG_ITEMS = [
     imageAlt: "A snippet for summer lunch menu by mark best",
   },
   {
+    id: 2,
     title: "A Traditional Christmas Eve, Mark Best Style",
     imageUrl: "../../assets/images/component2/featured-image2.jpg",
     content:
@@ -29,6 +31,7 @@ export const FEATURED_BLOG_ITEMS = [
     imageAlt: "A snippet of traditional christmas eve, Mark Best Style",
   },
   {
+    id: 3,
     title: "Taking Taste Further",
     imageUrl: "../../assets/images/component2/featured-image3.jpg",
     content:

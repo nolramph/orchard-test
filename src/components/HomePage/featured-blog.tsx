@@ -17,6 +17,7 @@ const FeaturedBlog = () => {
       <CardContainer>
         {FEATURED_BLOG_ITEMS.map(post => (
           <Card
+            key={post.id}
             imageUrl={post.imageUrl}
             imageAlt={post.imageAlt}
             title={post.title}
