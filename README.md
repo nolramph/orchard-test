@@ -89,7 +89,13 @@ Version 1
 - [x] Add hero section with responsive view
 - [x] Add button / call to action component
 - [x] Add card component
-- [ ] Add featured blog lists with responsive view
+- [x] Add featured blog lists with responsive view
+- [ ] Add animation utility and component 
+
+Version 1.1
+- [ ] Improve content injection and dynamic rendering
+- [ ] Add suspense / loading
+- [ ] Improve image scaling and optimization
 - [ ] Add slider component (Optional)
 
 
