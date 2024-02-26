@@ -90,7 +90,7 @@ Version 1
 - [x] Add button / call to action component
 - [x] Add card component
 - [x] Add featured blog lists with responsive view
-- [ ] Add animation utility and component 
+- [x] Add animation utility and component 
 
 Version 1.1
 - [ ] Improve content injection and dynamic rendering

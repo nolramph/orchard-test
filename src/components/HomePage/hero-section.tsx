@@ -1,8 +1,12 @@
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
+
+//animation
+import { fadeInRightToLeft, fadeInBottomToTop } from "../AnimatedDiv/animation_utils"
 
 //components
 import { Container, Row } from "../../styled/global"
 import Box from "../Box"
+import AnimatedComponent from "../AnimatedDiv"
 
 //styled utils
 import { media } from "../../styled/utils"
@@ -33,18 +37,25 @@ const HeroSection = () => {
         <ContentResponsiveBox>
           <article>
             <h2>Answer Your body's needs</h2>
-            <p>
-              The way ingredients are sourced affects the way we nourish our bodies. Author Mark
-              Schatzer believes our body naturally devolops an appetite for the foods and nutrients
-              it needs to be healthy, but that artificial flavourings are getting in the way. This
-              can be reversed by focusing on high-quality ingredients and being mindful as your
-              appetite guides you to consume according to your body's needs.
-            </p>
-            <h4>Be Mindful</h4>
-            <p style={{ fontWeight: 600 }}>
-              Sourcing local or organic food is a good way to start being more mindful about what
-              you're cooking and eating.
-            </p>
+            <AnimatedComponent animationType="bottomToTop" delay="0.1s">
+              <p>
+                The way ingredients are sourced affects the way we nourish our bodies. Author Mark
+                Schatzer believes our body naturally devolops an appetite for the foods and
+                nutrients it needs to be healthy, but that artificial flavourings are getting in the
+                way. This can be reversed by focusing on high-quality ingredients and being mindful
+                as your appetite guides you to consume according to your body's needs.
+              </p>
+            </AnimatedComponent>
+
+            <AnimatedComponent animationType="rightToLeft" delay="0.2s">
+              <h4>Be Mindful</h4>
+            </AnimatedComponent>
+            <AnimatedComponent animationType="bottomToTop" delay="0.3s">
+              <p style={{ fontWeight: 600 }}>
+                Sourcing local or organic food is a good way to start being more mindful about what
+                you're cooking and eating.
+              </p>
+            </AnimatedComponent>
           </article>
         </ContentResponsiveBox>
       </StyledRow>
@@ -88,16 +99,19 @@ const ImageResponsiveBox = styled(ResponsiveBox)`
       width: 100%;
       max-height: 600px;
       height: 100%;
-
-      div {
+      animation: ${fadeInRightToLeft} 1s ease-out forwards;
+    }
+    div {
         gap: 20px;
         img{
-          max-height: 145px;
+          max-width: 100%;
+          width: 100%;
+          max-height: 100%;
           height: 100%;
+          animation: ${fadeInBottomToTop} 1s ease-out 0.2s forwards!important;
 
         }
       }
-    }
   `};
   ${media.laptop`
     order: 1;
@@ -131,6 +145,7 @@ const ContentResponsiveBox = styled(ResponsiveBox)`
     margin-bottom: 28px;
     font-size: 26px;
     line-height: 36px;
+    animation: ${fadeInRightToLeft} 1s ease-out forwards;
   }
   h4 {
     font-weight: 600;
